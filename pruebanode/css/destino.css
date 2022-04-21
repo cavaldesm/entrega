@@ -1,0 +1,246 @@
+body {
+  background: #EBEBEB;
+  color: #395173;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+/*Nav*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+body nav {
+  background: #395173;
+  padding: 5px 20px;
+}
+body nav ul {
+  list-style-type: none;
+}
+body nav ul a {
+  color: #EBEBEB;
+  text-decoration: none;
+}
+body nav ul a:hover {
+  text-decoration: underline;
+}
+.logo body nav ul a:hover:hover {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.menu li .logo a, .menu li .toggle a {
+  font-size: 20px;
+}
+.menu li .logo a .button.secondary, .menu li .toggle a .button.secondary {
+  border-bottom: 1px #D4696C solid;
+}
+.menu li .logo a .button.secondary .toggle, .menu li .toggle a .button.secondary .toggle {
+  order: 1;
+}
+
+/*Contacto*/
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.containerhola {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-family: "Montserrat";
+  color: #EBEBEB;
+}
+.containerhola .columnhola {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.containerhola .columnhola .rowhola:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.containerhola .columnhola .rowhola:after .imgcontact:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Montserrat";
+}
+
+input[type=submit] {
+  background-color: #395173;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+input[type=submit]:hover {
+  background-color: #D4696C;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #395173;
+  font-family: "Montserrat";
+  color: #EBEBEB;
+}
+
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 15px;
+}
+footer .content p, footer .content a {
+  color: #EBEBEB;
+}
+footer .content footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content footer .content .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #EBEBEB;
+  margin-bottom: 16px;
+}
+footer .content footer .content p {
+  text-align: justify;
+}
+footer .content footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+footer .content footer .content .lower .topic i {
+  padding-right: 16px;
+}
+footer .content footer .content .lower .topic footer .content .middle {
+  padding-left: 80px;
+}
+footer .content footer .content .lower .topic footer .content .middle a {
+  line-height: 32px;
+}
+footer .content footer .content .lower .topic footer .content .middle footer .content .right input[type=text] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #D4696C;
+  background: #EBEBEB;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 2px solid;
+}
+footer .content footer .content .lower .topic footer .content .middle footer .content .right input[type=text] input[type=submit] {
+  height: 42px;
+  width: 100%;
+  font-size: 15px;
+  color: #EBEBEB;
+  background: #D4696C;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+footer .content footer .content .lower .topic footer .content .middle footer .content .right input[type=text] input[type=submit] input[type=submit]:hover {
+  background: none;
+  color: #D4696C;
+}
+
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons footer .content .media-icons a:hover {
+  border-color: #D4696C;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a {
+  color: #D4696C;
+  transition: all 0.3s ease;
+}
+footer .bottom a:hover {
+  color: #D4696C;
+}
+
+/*Para desktop*/
+@media all and (min-width: 900px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .item .toggle {
+    display: none;
+  }
+  .item .toggle .logo {
+    order: 0;
+  }
+  .item .toggle .logo .item {
+    order: 1;
+  }
+  .item .toggle .logo .item .button {
+    order: 2;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+  }
+  .menu .menu li.button {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnhola, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */

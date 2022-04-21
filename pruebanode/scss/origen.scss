@@ -1,0 +1,268 @@
+// Usando SASS
+// ************************
+
+// Variables
+
+$azul: #395173;
+$gris: #EBEBEB;
+$rosado: #D4696C;
+$verde: #57652A;
+$naranjo: #D9751F;
+$blanco: #f2f2f2;
+$blanquisimo: #ffffff;
+
+$font-stack: 'Montserrat';
+$font-size: 16px;
+
+// Estilos
+
+body{
+ background: $gris;
+    color: $azul;
+    font-family: $font-stack;
+    font-size: $font-size;
+}
+
+// Anidamiento
+
+/*Nav*/
+
+* { box-sizing: border-box; padding: 0; margin: 0; } 
+
+body { 
+  font-family: $font-stack; 
+  nav { 
+    background: $azul; padding: 5px 20px; 
+    ul { 
+        list-style-type: none; 
+        a {
+            color: $gris; 
+            text-decoration: none; 
+            &:hover { 
+                text-decoration: underline; 
+                .logo &:hover { 
+                    text-decoration: none; 
+                  } 
+              } 
+          } 
+         } 
+      } 
+} 
+
+.menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    li { 
+        font-size: $font-size; 
+        padding: 15px 5px; 
+        white-space: nowrap; 
+        .logo a, .toggle a { 
+          font-size: 20px; 
+          .button.secondary { 
+              border-bottom: 1px $rosado solid; 
+              .toggle { 
+                order: 1; 
+              } 
+            }
+        } 
+     } } 
+
+/*Contacto*/
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerhola {
+    border-radius: 5px;
+    background-color: $blanco;
+    padding: 10px;
+    font-family: $font-stack;
+    color: $gris;
+    .columnhola {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+        .rowhola:after {
+            content: "";
+            display: table;
+            clear: both;
+            .imgcontact:hover{
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+             }
+          }
+      }
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: $font-stack;
+  }
+  
+  input[type=submit] {
+    background-color:#395173;
+    color: $blanquisimo;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: $font-stack;
+    &:hover {
+        background-color: $rosado;
+      }
+  }
+  
+/*Footer*/
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: $azul;
+    font-family: $font-stack;
+    color:$gris;
+  }
+
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    p,a{
+        color:$gris;
+  }
+
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+}
+
+footer .content .topic{
+    font-size: 18px;
+    font-weight: 600;
+    color: $gris;
+    margin-bottom: 16px;
+}
+
+footer .content p{
+    text-align: justify;
+}
+
+footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+    i{
+        padding-right: 16px;
+}
+
+footer .content .middle{
+    padding-left: 80px;
+   a{
+        line-height: 32px;
+}
+
+footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #D4696C;
+    background: #EBEBEB;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid;
+   input[type="submit"]{
+        height: 42px;
+        width: 100%;
+        font-size: 15px;
+        color: #EBEBEB;
+        background: #D4696C;
+        outline: none;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 12px;
+        border: 2px solid;
+        transition: all 0.3s ease-in-out;
+        input[type="submit"]:hover{
+            background: none;
+            color: #D4696C;
+          }
+      }
+  }
+}
+}
+}
+
+footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+    .content .media-icons &:hover{
+        border-color: #D4696C;
+      }
+  }
+
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+    a{
+        color: #D4696C;
+        transition: all 0.3s ease;
+        &:hover{
+            color: #D4696C;
+          }
+      }
+  }
+
+/*Para desktop*/
+
+@media all and (min-width: 900px) { 
+
+.item { display: block; width: auto;
+        .toggle { 
+            display: none;
+            .logo { 
+                order: 0; 
+                .item { 
+                    order: 1; 
+                    .button { 
+                        order: 2; 
+                      } 
+                  } 
+              }  
+          }  } 
+
+.menu li { 
+  padding: 15px 10px; 
+  .menu &.button { 
+    padding-right: 0; } 
+  }
+} 
+
+@media screen and (max-width: 600px) {
+    .columnhola, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+    
