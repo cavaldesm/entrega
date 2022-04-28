@@ -1518,7 +1518,6 @@ html {
   margin-bottom: 16px;
   padding: 0 8px;
   background-color: #EBEBEB;
-
 }
 
 @media screen and (max-width: 650px) {
@@ -1708,3 +1707,21 @@ a:hover {
   padding-right: 0; } 
 }
 
+.header {
+  padding: 64px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  text-align: center;
+  background: #D4696C;
+  color: #EBEBEB;
+  font-size: 30px;
+  font-family: 'Montserrat' sans-serif;
+}
+
+.header h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.header p{font-size: 20px;
+font-weight: lighter;}

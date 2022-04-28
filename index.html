@@ -11,7 +11,7 @@
 
 <!--Hoja de estilos-->
  
-<link rel="stylesheet" href="C:\Users\catal\.vscode\Be Scandi - Catalina Valdés\css\bescandi.css">
+<link rel="stylesheet" href="C:\Users\catal\.vscode\Be Scandi - Catalina Valdés\pruebanode\css\destino.css">
 
 <!--Google Fonts-->
 
@@ -24,6 +24,9 @@
 
 <!--Título de la página-->
 <title>Inicio</title>
+<!--Incluyendo keywords-->
+<meta name="description" content="Be Scandi es una marca de moda de Chile, 
+orientada a que puedas crear tu armario cápsula. Descubre lo último en tendencia aquí.">
 </head>
 
 <!--Encabezado-->
@@ -37,96 +40,102 @@
 
 <!--Navegación-->
 <body>
-  <section>
-    <nav> 
-      <ul class="menu"> 
-      <li class="item"><a href="index.html">Inicio</a></li> 
-      <li class="item"><a href="sobre.html">Nosotras</a></li> 
-      <li class="item"><a href="contacto.html">Contacto</a></li> 
-      <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
-      <li class="item"><a href="productos.html">Productos</a></li> 
-      <li class="item button"><a href="#">Accede</a></li> 
-      <li class="item button secondary"><a href="#">Regístrate</a></li> 
-      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav>
-  </body>
-  </section>
+    <section>
+      <nav> 
+        <ul class="menu"> 
+        <li class="item"><a href="index.html">Inicio</a></li> 
+        <li class="item"><a href="sobre.html">Nosotras</a></li> 
+        <li class="item"><a href="contacto.html">Contacto</a></li> 
+        <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
+        <li class="item"><a href="productos.html">Productos</a></li> 
+        <li class="item button"><a href="#">Accede</a></li> 
+        <li class="item button secondary"><a href="#">Regístrate</a></li> 
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav>
+    </body>
+    </section>
 
-<!--Íconos-->
+    <!--Íconos-->
 <div class="menu-bar">
-<i class="fa-solid fa-bars" style="color: #ebebeb"></i>
-</div>
-</nav>
-</header>
+    <i class="fa-solid fa-bars" style="color: #ebebeb"></i>
+    </div>
+    </nav>
+    </header>
 
-<!--Un slideshow o carrusel-->
+    <!--Un slideshow o carrusel-->
 <body>
-<div class="slideshow-container">
-  
-<div class="mySlides fade">
-<div class="numbertext">1 / 3</div>
-<img src="assets/slide1.png" style="width:100%"> <!--Imagen 1-->
-<div class="text">¡Compra nuestra colección de otoño!</div> <!--Pie de foto-->
-</div>
-  
-<div class="mySlides fade">
-<div class="numbertext">2 / 3</div>
-<img src="assets/slide2.png" style="width:100%">
-<div class="text">¡Compra nuestra colección de primavera!</div>
-</div>
-  
-<div class="mySlides fade">
-<div class="numbertext">3 / 3</div>
-<img src="assets/slide3.png" style="width:100%">
-<div class="text">¡Compra nuestra colección de invierno!</div>
-</div>
-  
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-  
-</div>
-<br>
-  
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span> 
-<span class="dot" onclick="currentSlide(2)"></span> 
-<span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<!--Javascript-->
-
-<script>
- let slideIndex = 1;
- showSlides(slideIndex);
+    <div class="slideshow-container">
+      
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="assets/slide1.png" style="width:100%"> <!--Imagen 1-->
+    <div class="text">¡Compra nuestra colección de otoño!</div> <!--Pie de foto-->
+    </div>
+      
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="assets/slide2.png" style="width:100%">
+    <div class="text">¡Compra nuestra colección de primavera!</div>
+    </div>
+      
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="assets/slide3.png" style="width:100%">
+    <div class="text">¡Compra nuestra colección de invierno!</div>
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+      
+    </div>
+    <br>
+      
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
     
-  function plusSlides(n) {
-  showSlides(slideIndex += n);
-   }
-
-  function currentSlide(n) {
-   showSlides(slideIndex = n);
-    }
+    <!--Javascript-->
     
-  function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-</script>
-</body>
-</body>
+    <script>
+     let slideIndex = 1;
+     showSlides(slideIndex);
+        
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+       }
+    
+      function currentSlide(n) {
+       showSlides(slideIndex = n);
+        }
+        
+      function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+    </body>
+    </body>
 
 <!--Banner con titular-->
 <img src="assets/title2.png" width="200px" height="200px" class="responsive"> <!--Titular-->
+
+<!--Incluyendo un header-->
+<div class="header1">
+<h1>Moda ética y sostenible</h1>
+<p>Confeccionada por mujeres chilenas</p>
+</div>
 
 <!--Display de productos más vendidos-->
 
